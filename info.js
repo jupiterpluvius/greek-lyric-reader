@@ -108,7 +108,7 @@ const doInfo = function() {
     if (event.target.tagName === "SPAN") {
       let clickedWord = event.target;
 // Get information.
-      let wordForm = (clickedWord.dataset.intext) ? clickedWord.dataset.intext : "&nbsp;";
+      let wordForm = (clickedWord.dataset.intext) ? clickedWord.dataset.intext : `&nbsp;`;
       let wordLemma = (clickedWord.dataset.lemma) ? clickedWord.dataset.lemma : " ";
       var wordPos = (clickedWord.dataset.pos) ? doPOS(clickedWord.dataset.pos) : " ";
       let wordDef = (clickedWord.dataset.def) ? clickedWord.dataset.def : " ";
