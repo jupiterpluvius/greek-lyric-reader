@@ -1,18 +1,20 @@
 * {
-	font-family: "Source Sans Pro", "ZephText", "Consolas NF";
+	font-family: "Source Sans Pro","ZephText","Consolas NF";
 	padding: 0;
 	margin: 0;
 }
 
 body {
-	background-color: #96C0CE;
+	background-color: #f5d5ed;
 }
 
 p {
-	font-size: 20px;
-	line-height: 26px;
+	font-size: 28px;
+	line-height: 33px;
 	position: relative;
 }
+
+span {font-family: "GFS Neohellenic";}
 
 p::before {
 	position: absolute;
@@ -50,19 +52,12 @@ em{
 ul{
 	list-style-type: none;
 	position: fixed;
-	top: calc(100vh - 150px);
-	width: 100vw;
-	min-height: 150px; /* needs to be a specific number of pixels */
-	margin: auto;
-	padding-top:18px;
-	background-color: #89b0bd;
+	top: 150px;
+	right: 50px;
+	width: 300px;
+	height: 150px; /* needs to be a specific number of pixels */
+	padding-right:25px;
 	z-index: 250;
-	border-top: 4px solid #637f88;
-}
-
-ul>li{
-	margin:auto;
-	width:calc(45vw - 25px);
 }
 
 h1 {
@@ -77,9 +72,9 @@ h2 {
 }
 
 div {
-	padding: 50px;
-	margin: auto;
-	width: 45vw
+	padding: 50px 150px;
+	/* margin: auto; */
+	width: 750px;
 }
 
 div+div {
