@@ -1,33 +1,33 @@
 * {
-	font-family: "Source Sans Pro","ZephText","Consolas NF";
+	font-family: "ZephText","Consolas NF";
 	padding: 0;
 	margin: 0;
+	font-size: calc(16px + (26 - 16) * ((100vw - 600px) / (1600 - 600)));
 }
 
 body {
-	background-color: #f5d5ed;
+	background-color: #f6feff;
 }
 
 p {
-	font-size: 28px;
-	line-height: 33px;
+	line-height: calc(24px + (35 - 24) * ((100vw - 600px) / (1600 - 600)));
 	position: relative;
+	vertical-align: middle;
 }
 
-span {font-family: "GFS Neohellenic";}
+span {}
 
 p::before {
 	position: absolute;
-	left: -7rem;
-	bottom: -3.5px;
+	display: inline;
+	left: -5.25rem;
+	bottom: -1px;
+	vertical-align: middle;
 	content: attr(data-ln);
-	display: inline-block;
 	width: 4rem;
-	font-size: .5rem;
-	line-height: 1.6rem;
 	font-feature-settings: "lnum", "tnum";
 	text-align: right;
-	opacity: .5;
+	opacity: .2;
 	text-indent: 0;
 }
 
@@ -40,41 +40,56 @@ p::before {
 }
 
 .entry{
-	font-size: 2rem;
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
+
+.infoboxGreek{font-family: "Neohellenic";}
 
 em{
 	font-feature-settings: "c2cs" 1;
 	font-style: normal;
 	font-weight: bold;
+	font-size: .8rem;
 }
 
 ul{
 	list-style-type: none;
+	line-height: 1.1rem;
 	position: fixed;
-	top: 150px;
-	right: 50px;
-	width: 300px;
-	height: 150px; /* needs to be a specific number of pixels */
-	padding-right:25px;
+	overflow-x: hidden;
+	top: calc(100vh - (3.7rem + 4vh));
+	width: 100vw;
+	height: 180px;
+	padding:2vh 4vh;
 	z-index: 250;
+	background-color: #fcfcfc;
+	border: 1px solid black;
+	box-shadow: 3px 3px 10px #5a5a5a;
 }
 
+/* ul>li{white-space: nowrap;} */
+
 h1 {
-	font-size: 30px;
+	margin-left: 20px;
+	font-size: 1.5rem;
 }
 
 h2 {
+	font-size: 1.25rem;
 	color: #d3615b;
-	font-size: 20px;
-	margin: 25px 0 5px;
+	position: relative;
+	margin: 25px 0 15px;
+	padding-bottom: 5px;
 	font-feature-settings: "lnum", "pnum";
+	border-bottom: 2px solid #d3615b;
 }
 
 div {
-	padding: 50px 150px;
-	/* margin: auto; */
-	width: 750px;
+	padding: 50px 16vw;
+	margin: 0 auto 250px auto;
+	width: 640px;
 }
 
 div+div {
@@ -82,15 +97,21 @@ div+div {
 }
 
 section {
-	background-color: #fcfcfc;
-	padding: 0px 0px 30px 25px;
-	border: 1px solid black;
-	box-shadow: 3px 3px 10px #5a5a5a;
+	/* background-color: #fcfcfc; */
+	padding-left: 20px;
+	/* border: 1px solid black; */
+	/* box-shadow: 3px 3px 10px #5a5a5a; */
 }
 
 section+section {
-	margin-top: 30px;
+	margin-top: 75px;
 }
+
+/* h2::after {
+	position: absolute;
+	content: "——————";
+	padding: 0px 10px;
+} */
 
 h1+section {
 	margin-top: 20px;
