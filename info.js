@@ -114,8 +114,8 @@ const doInfo = function() {
       let wordDef = (clickedWord.dataset.def) ? clickedWord.dataset.def : " ";
       let infoBox = 
         `
-          <li><span class="entry">${wordForm}</span> &nbsp; <span style="font-variant:small-caps;">${wordPos}</span></li>
-          <li>${wordLemma}: <em>${wordDef}</em></li>
+          <li><span class="entry infoboxGreek">${wordForm}</span> &nbsp; <span style="font-variant:small-caps;">${wordPos}</span></li>
+          <li><span class="infoboxGreek">${wordLemma}</span>: <em>${wordDef}</em></li>
         `;
       document.querySelector("#info").innerHTML = infoBox;
     }
