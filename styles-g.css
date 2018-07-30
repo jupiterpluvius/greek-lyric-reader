@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Webly Sleek UI";
+    src: url(weblysleekuisl.woff);
+}
+
+@font-face {
+    font-family: "Webly Sleek UI";
+    src: url(weblysleekuisli.woff);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Webly Sleek UI";
+    src: url(weblysleekuisb.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Webly Sleek UI";
+    src: url(weblysleekuisbi.woff);
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+	font-family: "ZephText","EB Garamond","Minion Pro","Webly Sleek UI", system-ui, -apple-system, BlinkMacSystemFont;
+	padding: 0;
+	margin: 0;
+	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
+}
+
+body {
+	background-color: #CEE1E7;
+}
+
+p {
+	line-height: calc(30px + (40 - 30) * ((100vw - 750px) / (1600 - 750)));
+	position: relative;
+}
+
+p::before {
+	position: absolute;
+	left: -5rem;
+	font-size: .8rem;
+	bottom: -1px;
+	color: #000000;
+	content: attr(data-ln);
+	width: 3rem;
+	font-feature-settings: "lnum", "tnum";
+	text-align: right;
+	text-indent: 0;
+	opacity:0.2;
+}
+
+p:hover::before {
+	opacity:1;
+	font-weight:bold;
+	color: #CA1E47;
+}
+
+p:hover {color: #CA1E47;}
+
+.indent {
+	text-indent: 1.5rem;
+}
+
+.center {
+	text-align: center;
+}
+
+.entry{
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+}
+
+em {
+	font-style: italic;
+	font-size: inherit;
+}
+
+.smallcaps {
+	font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum';
+}
+
+#centerer {
+	box-sizing: border-box;
+	top:0;
+	left:0;
+	padding: 25px 0 25px 25px;
+	background-color: #eeeeee;
+	box-shadow: -2px 2px 8px 0px #000;
+	position: -webkit-sticky;
+	position: sticky;
+	overflow: hidden;
+	z-index: 250;
+}
+ul{
+	list-style-type: none;
+	line-height: 1.1rem;
+	/* overflow-x: hidden; */
+	margin: auto;
+	color: #133441;
+	width: 27rem;
+	padding-left: 25px;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 1.1rem;
+	line-height: 1.2rem;
+	padding: 30px 25px 25px;
+	background-color:#273d5c;
+	color: #ffffff;
+	text-align: center;
+}
+
+#container {
+	margin: 60px auto 150px;
+	width: 27rem;
+}
+
+section {
+	padding: 25px 25px;
+	/* margin-left: 3rem; */
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+section+section {
+	margin-top: 75px;
+}
+
+h1+section {
+	margin-top: 20px;
+}
+
+.elegiac:nth-child(odd){
+	text-indent:1.5rem;
+}
+
+.infoboxGreek{font-family: "ZephText";}
