@@ -1,32 +1,8 @@
-@font-face {
-    font-family: "Webly Sleek UI";
-    src: url(weblysleekuisl.woff);
-}
-
-@font-face {
-    font-family: "Webly Sleek UI";
-    src: url(weblysleekuisli.woff);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Webly Sleek UI";
-    src: url(weblysleekuisb.woff);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Webly Sleek UI";
-    src: url(weblysleekuisbi.woff);
-    font-weight: bold;
-    font-style: italic;
-}
-
 * {
-	font-family: "ZephText","EB Garamond","Minion Pro","Webly Sleek UI", system-ui, -apple-system, BlinkMacSystemFont;
+	font-family: "EB Garamond","ZephText","Minoan Pro", system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
 	margin: 0;
-	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
+	font-size: calc(24px + (35 - 24) * ((100vw - 750px) / (1600 - 750)));
 }
 
 body {
@@ -34,7 +10,7 @@ body {
 }
 
 p {
-	line-height: calc(30px + (40 - 30) * ((100vw - 750px) / (1600 - 750)));
+	line-height: calc(32px + (48 - 32) * ((100vw - 750px) / (1600 - 750)));
 	position: relative;
 }
 
@@ -58,7 +34,10 @@ p:hover::before {
 	color: #CA1E47;
 }
 
-p:hover {color: #CA1E47;}
+span:hover {
+	border-bottom: 3px dotted #CA1E47;
+	color: #CA1E47;
+}
 
 .indent {
 	text-indent: 1.5rem;
@@ -87,7 +66,7 @@ em {
 	box-sizing: border-box;
 	top:0;
 	left:0;
-	padding: 25px 0 25px 25px;
+	padding: 25px 0 25px 30px;
 	background-color: #eeeeee;
 	box-shadow: -2px 2px 8px 0px #000;
 	position: -webkit-sticky;
@@ -101,7 +80,7 @@ ul{
 	/* overflow-x: hidden; */
 	margin: auto;
 	color: #133441;
-	width: 27rem;
+	width: 24rem;
 	padding-left: 25px;
 }
 
@@ -109,7 +88,7 @@ h1 {
 	font-weight: normal;
 	font-size: 1.1rem;
 	line-height: 1.2rem;
-	padding: 30px 25px 25px;
+	padding: 30px 25px 25px 0;
 	background-color:#273d5c;
 	color: #ffffff;
 	text-align: center;
@@ -117,11 +96,11 @@ h1 {
 
 #container {
 	margin: 60px auto 150px;
-	width: 27rem;
+	width: 24rem;
 }
 
 section {
-	padding: 25px 25px;
+	padding: 25px 30px 40px;
 	/* margin-left: 3rem; */
 	background-color: #ffffff;
 	border: 1px solid black;
@@ -139,4 +118,4 @@ h1+section {
 	text-indent:1.5rem;
 }
 
-.infoboxGreek{font-family: "ZephText";}
+/* .infoboxGreek{font-family: "ZephText";} */
