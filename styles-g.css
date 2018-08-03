@@ -1,8 +1,8 @@
 * {
-	font-family: "EB Garamond","ZephText","Minoan Pro", system-ui, -apple-system, BlinkMacSystemFont;
+	font-family: "ZephText","Minoan Pro", system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
 	margin: 0;
-	font-size: calc(24px + (35 - 24) * ((100vw - 750px) / (1600 - 750)));
+	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 p {
-	line-height: calc(32px + (48 - 32) * ((100vw - 750px) / (1600 - 750)));
+	line-height: calc(30px + (40 - 30) * ((100vw - 750px) / (1600 - 750)));
 	position: relative;
 }
 
@@ -96,7 +96,7 @@ h1 {
 
 #container {
 	margin: 60px auto 150px;
-	width: 24rem;
+	width: 28rem;
 }
 
 section {

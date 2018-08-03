@@ -63,6 +63,7 @@ const tagCatalog = [
 	{"value": "a", "expanded": "act."}, 
 	{"value": "d", "expanded": "dep."}, 
 	{"value": "e", "expanded": "mid-pass."},
+	{"value": "m", "expanded": "mid-pass."},
 	{"value": "p", "expanded": "pass."}
 	]
 },
@@ -140,8 +141,7 @@ doInfo = function() {
 	let infoBox = 
 		`
 		<li><span class="entry infoboxGreek">${wordForm}</span> &nbsp; <span class="smallcaps">${wordPos}</span></li>
-		<li>${wordDict}</li>
-		<li><em>${wordDef}</em></li>
+		<li><b>${wordDict}</b> ${wordDef}</li>
 		`;
 	document.querySelector("#info").innerHTML = infoBox;
 }
