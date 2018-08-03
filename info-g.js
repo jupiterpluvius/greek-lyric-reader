@@ -62,6 +62,7 @@ const tagCatalog = [
 	{"value": "-", "expanded": " "}, 
 	{"value": "a", "expanded": "act."}, 
 	{"value": "d", "expanded": "dep."}, 
+	{"value": "e", "expanded": "mid-pass."},
 	{"value": "p", "expanded": "pass."}
 	]
 },
@@ -133,7 +134,7 @@ doInfo = function() {
 			let clickedWord = event.target;
 	// Get information.
 	let wordForm = (clickedWord.dataset.intext) ? clickedWord.dataset.intext : `&nbsp;`;
-	let wordDict = (clickedWord.dataset.dict) ? clickedWord.dataset.dict : " ";
+	let wordDict = (clickedWord.dataset.lemma) ? clickedWord.dataset.lemma : " ";
 	var wordPos = (clickedWord.dataset.pos) ? doPOS(clickedWord.dataset.pos) : " ";
 	let wordDef = (clickedWord.dataset.def) ? clickedWord.dataset.def : " ";
 	let infoBox = 
