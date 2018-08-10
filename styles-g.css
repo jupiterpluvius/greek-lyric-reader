@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=GFS+Neohellenic:400,700');
-
 * {
-	font-family: "ZephText","Garamond Premier Pro","GFS Neohellenic" system-ui, -apple-system, BlinkMacSystemFont;
+	font-family: "ZephText","GFS Neohellenic", system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
 	margin: 0;
 	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
@@ -36,7 +34,7 @@ p:hover::before {
 	color: #CA1E47;
 }
 
-span:hover {
+#container span:hover {
 	border-bottom: 3px dotted #CA1E47;
 	color: #CA1E47;
 }
