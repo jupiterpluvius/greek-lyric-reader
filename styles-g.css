@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=GFS+Neohellenic:400,700');
+
 * {
-	font-family: "ZephText","Minoan Pro","Garamond Premier Pro", system-ui, -apple-system, BlinkMacSystemFont;
+	font-family: "ZephText","Garamond Premier Pro","GFS Neohellenic" system-ui, -apple-system, BlinkMacSystemFont;
 	padding: 0;
 	margin: 0;
 	font-size: calc(20px + (30 - 20) * ((100vw - 750px) / (1600 - 750)));
