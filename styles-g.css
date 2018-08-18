@@ -17,8 +17,8 @@ p {
 p::before {
 	position: absolute;
 	left: -5rem;
-	font-size: .8rem;
-	bottom: -1px;
+	font-size: .6rem;
+	bottom: -3px;
 	color: #000000;
 	content: attr(data-ln);
 	width: 3rem;
