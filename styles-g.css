@@ -66,7 +66,8 @@ em {
 	box-sizing: border-box;
 	top:0;
 	left:0;
-	padding: 25px 0 25px 30px;
+	height:4.5rem;
+	padding: .75rem 0 .75rem 30px;
 	background-color: #d5f2fa;
 	box-shadow: -2px 2px 2px 0px #133441;
 	position: -webkit-sticky;
