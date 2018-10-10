@@ -36,7 +36,8 @@ const tagCatalog = [
 	{"value": "-", "expanded": " "}, 
 	{"value": "p", "expanded": "pres."}, 
 	{"value": "r", "expanded": "pf."}, 
-	{"value": "i", "expanded": "impf."}, 
+	{"value": "r", "expanded": "pf."}, 
+	{"value": "a", "expanded": "aor."}, 
 	{"value": "f", "expanded": "fut."}, 
 	{"value": "t", "expanded": "futpf."}, 
 	{"value": "l", "expanded": "plupf."}
@@ -61,9 +62,8 @@ const tagCatalog = [
 	"elements": [
 	{"value": "-", "expanded": " "}, 
 	{"value": "a", "expanded": "act."}, 
-	{"value": "d", "expanded": "dep."}, 
-	{"value": "e", "expanded": "mid-pass."},
-	{"value": "m", "expanded": "mid-pass."},
+	{"value": "e", "expanded": "mid-pass."}, 
+	{"value": "m", "expanded": "mid."}, 
 	{"value": "p", "expanded": "pass."}
 	]
 },
@@ -84,9 +84,7 @@ const tagCatalog = [
 	{"value": "g", "expanded": "gen."}, 
 	{"value": "d", "expanded": "dat."}, 
 	{"value": "a", "expanded": "acc."}, 
-	{"value": "b", "expanded": "abl."}, 
-	{"value": "v", "expanded": "voc."}, 
-	{"value": "l", "expanded": "loc."}
+	{"value": "v", "expanded": "voc."}
 	]
 },
 {
